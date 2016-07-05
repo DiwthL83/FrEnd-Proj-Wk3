@@ -5,7 +5,7 @@
 <style>
 
 /*BEM Convention*/
-.super-container {
+.super-container { 
 	display: flex;
 	height: 100%;
 	flex-direction: column;

@@ -5,14 +5,6 @@
 <style>
 
 
-/*SidebarHeader will default to 
-SidebarHeader--Light
-
-*/
-
-/*BEM Convention*/
-
-
 /* This is a container. */
 /* Not in use after consulting with Sumeet. */
 .super-container { 
@@ -46,32 +38,45 @@ SidebarHeader--Light
 }
 
 
-
-
 /* This is a container for the left and right columns on the page. */
 .sidebarContainer  {
   /* 10em is the width of the column */
 	display: flex;
 	flex-flow: column;
 	width: 190px;
-	line-height: 20px;
-	/*align-content: center;*/
-	/*text-align: justify;*/
 	background: #292929; /*charcoal*/
 	font-family: tahoma;
 	font-size: 12px;
 }
 
 
+/* This is a container for the left and right columns on the page. */
+.sidebarContainer--light  {
+	background: #B4B2B2; /*light gray*/
+}
+
+
+
+.left_side {
+    width: 15%;
+    float: left;
+    position: fixed;
+    height: 100%;
+    background-color: red;
+    /*color: #19ECD1;*/
+}
+
+
 .sidebarHeader{
 	color: #606060;
-	margin-bottom: 10px;
-	text-indent: 20px;
+	margin-top: 10px;
+	text-indent: 10px;
 }
 
 /* This is a block. */
 .navItem{
 	font-size: 12px;
+	line-height: 15px;
 	color: #FFFFFF; /*white*/
 	list-style-type: none;
 }

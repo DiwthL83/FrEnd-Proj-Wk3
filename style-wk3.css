@@ -7,14 +7,8 @@
 /*BEM Convention*/
 .super-container { 
 	display: flex;
-	height: 100%;
 	flex-direction: column;
 	background: #DDDDDD; /*light gray*/
-}
-
-.main-content {
-	flex: 1;
-	border: 10px;
 }
 
 .container {
@@ -22,6 +16,11 @@
 	flex: 1;	
 }
 
+
+.main-content {
+	flex: 1;
+	border: 10px;
+}
 
 .left-sidebar {
   /* 10em is the width of the column */
@@ -69,10 +68,10 @@
 }
 
 
-.right-sidebar--upper{
+.right-sidebar--lower{
 	padding: 0px;
 	height: 80px;
-	background: #8ECACE;
+	background: gray;
 	color: #FFFFFF;
 }
 

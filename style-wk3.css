@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+<head>
+<style>
+
+/*BEM Convention*/
+.super-container {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	background: #DDDDDD; /*light gray*/
+}
+
+.main-content {
+	flex: 1;
+	border: 10px;
+}
+
+.container {
+	display: flex;
+	flex: 1;	
+}
+
+
+.left-sidebar {
+  /* 10em is the width of the column */
+	display: flex;
+	flex-flow: column;
+	width: 170px;
+	list-style: none;
+	align-content: center;
+	text-align: justify;
+	background: #292929;
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+
+.left-sidebar--upper{
+	padding: 0px;
+	height: 80px;
+	background: #DD6D6D;
+}
+
+.left-sidebar-htxt {
+	color: #606060;
+}
+
+.left-sidebar-ltxt {
+	color: #FFFFFF;
+}
+
+.right-sidebar {
+	/* 12em is the width of the column */
+	display: flex;
+	flex-flow: column;
+	width: 190px;
+	background: #B4B2B2;
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+.right-sidebar--upper{
+	padding: 0px;
+	height: 80px;
+	background: #8ECACE;
+	color: #FFFFFF;
+}
+
+
+.right-sidebar--upper{
+	padding: 0px;
+	height: 80px;
+	background: #8ECACE;
+	color: #FFFFFF;
+}
+
+
+</style>
+</head>
+</html>

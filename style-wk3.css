@@ -4,50 +4,131 @@
 <head>
 <style>
 
+
+/*SidebarHeader will default to 
+SidebarHeader--Light
+
+*/
+
 /*BEM Convention*/
+
+
+/* This is a container. */
+/* Not in use after consulting with Sumeet. */
 .super-container { 
 	display: flex;
 	flex-direction: column;
 	background: #DDDDDD; /*light gray*/
 }
 
-.container {
-	display: flex;
-	flex: 1;	
-}
-
-
+/* */
 .main-content {
 	flex: 1;
-	border: 10px;
+	margin: 10px;
 }
 
-.left-sidebar {
+
+.container {
+	display: flex;
+	/*flex: 1;	*/
+}
+
+
+/* This is a container for the center portion of the page. */
+.middleContainer {
+	/*display: flex;*/
+	/*flex: 1;	*/
+	display: flex;
+	flex: 1;
+	margin: 10px;
+	flex-direction: column;
+	background: #DDDDDD; /*light gray*/
+}
+
+
+
+
+/* This is a container for the left and right columns on the page. */
+.sidebarContainer  {
   /* 10em is the width of the column */
 	display: flex;
 	flex-flow: column;
-	width: 170px;
-	list-style: none;
-	align-content: center;
-	text-align: justify;
-	background: #292929;
+	width: 190px;
+	line-height: 20px;
+	/*align-content: center;*/
+	/*text-align: justify;*/
+	background: #292929; /*charcoal*/
 	font-family: tahoma;
 	font-size: 12px;
 }
 
 
-.left-sidebar--upper{
-	padding: 0px;
-	height: 80px;
-	background: #DD6D6D;
+.sidebarHeader{
+	color: #606060;
+	margin-bottom: 10px;
+	text-indent: 20px;
 }
 
+/* This is a block. */
+.navItem{
+	font-size: 12px;
+	color: #FFFFFF; /*white*/
+	list-style-type: none;
+}
+
+/* This is an element. */
+.navItem__icon{
+
+}
+
+
+/* This is an element. */
+.navItem__text{
+
+}
+
+/* This is a block modifier. */
+.navItem--current{
+
+}
+
+/* This is a block. Defaults to sienna color. */
+.searchbox{
+	padding: 0px;
+	height: 80px;
+	line-height: 50px;
+	background: #DD6D6D; /*red-orange*/
+	color: #FFFFFF;
+}
+
+
+/* This is a block modifier. */
+.searchbox--chat{
+	background: gray;
+}
+
+/* This is a block modifier. */
+.searchbox--user{
+	background: #8ECACE; /*teal*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .left-sidebar-htxt {
-	color: #606060;
+	color: #606060; /*darker gray*/
 }
 
 .left-sidebar-ltxt {
-	color: #FFFFFF;
+	color: #FFFFFF; /*white*/
 }
 
 .right-sidebar {
@@ -55,7 +136,11 @@
 	display: flex;
 	flex-flow: column;
 	width: 190px;
-	background: #B4B2B2;
+	list-style: none;
+	line-height: 20px;
+	align-content: center;
+	text-align: justify;
+	background: #B4B2B2; /*med gray*/
 	font-family: tahoma;
 	font-size: 12px;
 }
